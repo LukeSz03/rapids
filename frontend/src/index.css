@@ -1,0 +1,9 @@
+body {
+  font-family: Avenir;
+  color: white;
+  background-color: #242424;
+}
+
+#logo {
+  width: 150px;
+}
