@@ -1,13 +1,13 @@
 {
   "name": "frontend",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
-    "format": "prettier --write src/*.jsx",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write src/*.jsx",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -22,7 +22,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
-    "prettier": "^3.0.0",
+    "prettier": "3.0.0",
     "vite": "^4.4.0"
   }
 }

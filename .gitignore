@@ -1,9 +1,3 @@
-# Apple
 .DS_Store
-
-# Java
-.idea
-*.class
-
-# JavaScript
-node_modules
+venv/
+node_modules/
