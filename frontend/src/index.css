@@ -1,5 +1,8 @@
-body {
+* {
     font-family: Avenir;
+}
+
+body {
     color: #183a1d;
     background-color: #fefbe9;
     animation: fadeIn ease 0.6s;
