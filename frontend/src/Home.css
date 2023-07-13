@@ -33,7 +33,7 @@
     text-underline-position: under;
 }
 
-#logo {
+.logo {
     width: 270px;
     float: right;
     margin-top: 23px;

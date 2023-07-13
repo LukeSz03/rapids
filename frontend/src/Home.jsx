@@ -20,7 +20,7 @@ function Home() {
           Get Started
         </button>
       </div>
-      <img src="logo.png" alt="Rapids logo" id="logo" />
+      <img src="logo.png" alt="Rapids logo" className="logo" />
     </div>
   );
 }
