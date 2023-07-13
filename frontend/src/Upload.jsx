@@ -1,14 +1,39 @@
+import { useState } from "react";
+
 function Upload() {
-    return (
-        <div className="container">
-            <div className="content">
-                <h1>Rapids</h1>
-                <h2>Upload <span class="underline">files</span> and share <br /> <span class="underline">instantaneously</span></h2>
-                <button className="button">⬆ Upload files</button>
-            </div>
-            <img src="logo.png" alt="Rapids logo" id="logo" />
-        </div>
-    );
+  const [selectedFiles, setSelectedFiles] = useState([]);
+
+  const handleFileUpload = (event) => {
+    const files = event.target.files;
+    setSelectedFiles(Array.from(files));
+  };
+
+  return (
+    <div className="container">
+      <div className="content">
+        <label htmlFor="upload-input" className="button">
+          ⬆ Upload files
+          <input
+            id="upload-input"
+            type="file"
+            multiple
+            onChange={handleFileUpload}
+            style={{ display: "none" }}
+          />
+        </label>
+        {selectedFiles.length > 0 && (
+          <div>
+            <h3>Uploaded files:</h3>
+            <ul>
+              {selectedFiles.map((file, index) => (
+                <li key={index}>{file.name}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default Upload;
