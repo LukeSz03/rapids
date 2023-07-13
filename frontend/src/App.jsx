@@ -1,10 +1,12 @@
-import Home from './Home';
+import Upload from './Upload';
+import Footer from './Footer';
 
 function App() {
   return (
     <>
-      <Home />
-    </>
+      <Upload />
+      <Footer />
+    </ >
   );
 }
 

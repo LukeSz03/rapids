@@ -1,6 +1,7 @@
 body {
     font-family: Avenir;
-    color: #34773d;
+    color: #183a1d;
+    background-color: #fefbe9;
     animation: fadeIn ease 0.6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -16,11 +17,17 @@ body {
     }
 }
 
-
 h1 {
     font-size: 50px;
     color: #f6c453;
 }
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #f0a04b;
+    text-underline-position: under;
+}
+
 
 #logo {
     width: 270px;
@@ -53,7 +60,7 @@ h1 {
 }
 
 .button:hover {
-    background-color: #28632e;
+    background-color: #7dac84;
 }
 
 footer {
@@ -61,8 +68,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ddd;
+    background-color: #e1eedd;
     padding: 15px;
     text-align: center;
 }
