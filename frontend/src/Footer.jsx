@@ -4,8 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <p>
-        Made with <span className="heart">❤</span> by Simon Tran 🔗 Luke
-        Schultz
+        Simon Tran 🔗 Luke Schultz
       </p>
     </footer>
   );
