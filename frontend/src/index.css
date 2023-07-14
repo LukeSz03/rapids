@@ -3,8 +3,15 @@
 }
 
 body {
-    color: #183a1d;
-    background-color: #fefbe9;
+    background-color: white;
+}
+
+.center {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -14,7 +21,7 @@ h1 {
 
 .button {
     border-radius: 50px;
-    background-color: #34773d;
+    background-color: #f6c453;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -24,5 +31,5 @@ h1 {
 }
 
 .button:hover {
-    background-color: #7dac84;
+    background-color: #ffe3a2;
 }
