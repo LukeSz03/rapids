@@ -22,6 +22,23 @@ function Upload() {
 
   const handleButtonClick = () => {
     console.log(selectedFiles); //for testing purpose
+
+    const formData = new FormData();
+    
+    selectedFiles.forEach(file => {
+      formData.append('files', file);
+    });
+
+    fetch('/upload', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      console.log(response);
+    })
+    .catch(error => {
+      console.error(error);
+    });
   };
 
   return (
